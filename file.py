@@ -14,6 +14,15 @@ dict = [['chemical', 'executive', 'recruiter', '>100', 'Australia', 'Chemical', 
 
 df = pd.DataFrame(dict, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
 
+df2 = pd.DataFrame(dict, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
+
+df3 = pd.DataFrame(dict, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
 
 # print dataframe
-print(df)
+print(df, "\n")
+
+print (df2, "\n")
+
+print (df3, "\n")
+
+
