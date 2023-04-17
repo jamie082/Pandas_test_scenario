@@ -14,11 +14,11 @@ dict = (['chemical', 'executive', 'recruiter', '>100', 'Australia', 'Chemical', 
 
 df = pd.DataFrame(dict, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
 
-df2 = pd.DataFrame(dict, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
+
 
 df3 = pd.DataFrame(dict, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
 
-# print dataframe
+# print First column
 print(df, "\n")
 
 # modify date_scraped
@@ -42,6 +42,14 @@ new_output_column = pd.DataFrame(third_column, columns = ['Keyword', 'Rank', 'UR
 df.update(new_output_column)
 print (df)
 
-print (df3, "\n")
 
-# Create a new df that loops like this:
+# Print fourth and final column
+
+fourth_column = (['chemical', 'executive', 'recruiter', '>100', '>100', '>100', 'Australia', 'Chemical', '2/20/23'],
+                ['chemical', 'executive', 'recruiter', '>100', '>100', '>100', 'Canada', 'Chemical', '2/20/23'],
+                ['chemical', 'executive', 'recruiter', '>100', '>100', '>100', 'Germany', 'Chemical', '2/20/20'])
+
+
+third_column = pd.DataFrame(fourth_column, columns = ['Keyword', 'ABC', 'Rank_2/20/23', 'Rank_1/15/23' 'Rank_3/1/23', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
+df.update(third_column)
+print(third_column)
