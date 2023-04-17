@@ -19,7 +19,6 @@ df2 = pd.DataFrame(dict, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volum
 df3 = pd.DataFrame(dict, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
 
 
-
 # print dataframe
 print(df, "\n")
 
@@ -27,4 +26,4 @@ print (df2, "\n")
 
 print (df3, "\n")
 
-print (df4)
+# Create a new df that loops like this:
