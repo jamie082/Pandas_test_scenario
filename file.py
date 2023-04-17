@@ -18,8 +18,6 @@ df2 = pd.DataFrame(dict, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volum
 
 df3 = pd.DataFrame(dict, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
 
-
-
 # print dataframe
 print(df, "\n")
 
@@ -28,9 +26,10 @@ new_df = (['chemical', 'executive', 'recruiter', '>100', 'Australia', 'Chemical'
           ['chemical', 'executive', 'recruiter', '>100', 'Canada', 'Chemical', '1/15/23'],
           ['chemical', 'executive', 'recruiter', '>100', 'Germany', 'Chemical', '1/15/23'])
 
-df.update(new_df)
-print(df)
 
+new_output = pd.DataFrame(new_df, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
+df.update(new_output)
+print(df)
 
 print (df2, "\n")
 
