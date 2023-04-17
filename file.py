@@ -26,12 +26,21 @@ new_df = (['chemical', 'executive', 'recruiter', '>100', 'Australia', 'Chemical'
           ['chemical', 'executive', 'recruiter', '>100', 'Canada', 'Chemical', '1/15/23'],
           ['chemical', 'executive', 'recruiter', '>100', 'Germany', 'Chemical', '1/15/23'])
 
+# print second column
 
 new_output = pd.DataFrame(new_df, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
 df.update(new_output)
 print(df)
 
-print (df2, "\n")
+# print third column
+
+third_column = (['chemical', 'executive', 'recruiter', '>100', 'Australia', 'Chemical', '3/1/23'],
+                ['chemical', 'executive', 'recruiter', '>100', 'Canada', 'Chemical', '3/15/23'],
+                ['chemical', 'executive', 'recruiter', '>100', 'Germany', 'Chemical', '3/1/23'])
+
+new_output_column = pd.DataFrame(third_column, columns = ['Keyword', 'Rank', 'URL', 'Location', 'Volume', 'Tags', 'date_scraped'])
+df.update(new_output_column)
+print (df)
 
 print (df3, "\n")
 
